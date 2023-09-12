@@ -1,0 +1,104 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheLemonDr's Bio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #00021de6;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .bio-container, .bio-container2 {
+            background-color: rgba(0, 0, 0, 0.342);
+            border-radius: 30px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 30px;
+            border: 5px solid #fff;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .bio-container, .bio-container2 {
+          box-shadow: 0 0 30px red;
+          animation: color 10s infinite;
+        }
+
+        @keyframes color{
+          0% {box-shadow: 0 0 30px red;}
+          25% {box-shadow: 0 0 30px green;}
+          50% {box-shadow: 0 0 30px blue;}
+          75% {box-shadow: 0 0 30px yellow;}
+          100% {box-shadow: 0 0 30px red;}
+        }
+
+        footer {
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+        }
+
+      .bio-container2 {
+        display: none;
+        margin-left: 20vw;
+        margin-right: 20vw;
+      }
+
+      .syntho {
+        animation: link 4s infinite;
+      }
+
+      @keyframes link {
+        0% {color: blue;}
+        20% {color: green;}
+        40% {color: red;}
+        60% {color: yellow;}
+        80% {color: orange;}
+        100% {color: blue;} 
+      }
+    </style>
+</head>
+<body>
+  <script src="/script.js"></script>
+    <div class="bio-container">
+        <a class="gone" href="javascript: gone()">
+          <img class="profile-pic gone" src="/lemon.png">
+        </a>
+        <h1 class="gone">Dr. Lemon</h1>
+        <p class="gone">WebDev | Gamer | Spherical</p>
+        <p class="gone">Dr. Lemon enjoys creating websites, and finds peace within the lines of code.  Click the lemon picture above to read more.</p>
+    </div>
+
+      <div class="bio-container2">
+        <p>Doctor Lemon first started learning to code in early April of 2023.  Since then, he has made simple projects to test his knowledge.  A few months ago, he started a bigger project, a website that <i>looks</i> like it's to help you out for school, but is actually a games site.  It's called <a href="https://synthosphere.github.io" class="syntho">SynthoSphere</a>, go check it out!  Press "Doctor Lemon" in the bottom left, and enter the password to access the games.  This website has history cloaking as well, so the games pages wont show up on your history.  It is also fully functional, meaning everything on the page for school works.  He also has a <a href="https://youtube.com/@thelemondr">YouTube channel</a>.</p>
+    </div>
+
+  <footer>
+    <center>
+      <p style="font-size: 0.7em;">Thanks to Alien for the design idea.</p>
+    </center>
+  </footer>
+
+
+</body></html>
